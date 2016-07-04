@@ -1,650 +1,275 @@
-<!DOCTYPE HTML>
-<html>
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   
-  <title>懒惰的码农~</title>
-  <meta name="author" content="star">
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  
-  <meta property="og:site_name" content="懒惰的码农~"/>
-
-  
-    <meta property="og:image" content="undefined"/>
-  
-
-  
-  
-    <link href="/favicon.png" rel="icon">
-  
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/themes/bootstrap.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-  <script src="/js/jquery-2.0.3.min.js"></script>
-
-  <!-- analytics -->
-  
-
-
-
+    <title>懒惰的码农~</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="star">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
- <body>  
-  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	<span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-       <a class="navbar-brand" href="/">懒惰的码农~</a>
-      <div class="collapse navbar-collapse nav-menu">
-		<ul class="nav navbar-nav">
-		  
-		  <li>
-			<a href="/archives" title="All the articles.">
-			  <i class="fa fa-archive"></i>Archives
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/categories" title="All the categories.">
-			  <i class="fa fa-folder"></i>Categories
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/tags" title="All the tags.">
-			  <i class="fa fa-tags"></i>Tags
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/about" title="About me.">
-			  <i class="fa fa-user"></i>About
-			</a>
-		  </li>
-		  
-		</ul>
-      </div>
-    </div> <!-- container -->
-</nav>
-<div class="clearfix"></div>
-
-  <div class="container">
-  	<div class="content">
-    	 <div class="page-header page-header-inverse ">
-  <h1 class="title title-inverse ">懒惰的码农~</h1>
-</div>
-
-<div class="row page">
-
-	
-	<div class="col-md-9">
-	
-
-		<div class="slogan">
-      <i class="fa fa-heart"></i>
-      Yet another bootstrap theme.
-</div>    
-		<div id="top_search"></div>
-		<div class="mypage">
+  <body>
+    <header>
+      <div>
 		
-		<!-- title and entry -->
-        <!-- render top articles firstly -->
-        
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-            
-		
-        
-        <!-- render other articles -->
-        
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-07-04 </div>
-			<div class="article-title"><a href="/2016/07/04/npm_install_error/" title="使用node管理器npm时报错">npm install error</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法"><a href="#Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法" class="headerlink" title="Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法"></a>Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法</h1><h2 id="错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0"><a href="#错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0" class="headerlink" title="错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0"></a>错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0</h2><h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install nodejs-legacy</div></pre></td></tr></table></figure>
-<p>也可以尝试</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln -s /usr/bin/nodejs  /usr/bin/node</div></pre></td></tr></table></figure>
-<h3 id="问题解决思路："><a href="#问题解决思路：" class="headerlink" title="问题解决思路："></a>问题解决思路：</h3><p> 本人是在安装hexo时出现的错误，即下列操作 </p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
-<p>错误信息中有如下信息</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm ERR! not ok <span class="selector-tag">code</span> <span class="number">0</span></div><div class="line">npm WARN This failure might be due to the use of legacy binary <span class="string">"node"</span></div><div class="line">npm WARN For further explanations, please read</div><div class="line">/usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>根据提示信息打开文件</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>文件中7-8行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The global search path <span class="keyword">for</span> modules is /usr/lib/nodejs</div></pre></td></tr></table></figure>
-<p>32-40行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">The upstream name <span class="keyword">for</span> the Node<span class="selector-class">.js</span> interpreter command is <span class="string">"node"</span>.</div><div class="line">In Debian the interpreter command has been changed to <span class="string">"nodejs"</span>.</div><div class="line"></div><div class="line">This was done to prevent <span class="selector-tag">a</span> namespace collision: other commands use </div><div class="line">the same name <span class="keyword">in</span> their upstreams, such as ax25-node from the <span class="string">"node"</span></div><div class="line">package.</div><div class="line"></div><div class="line">Scripts calling Node<span class="selector-class">.js</span> as <span class="selector-tag">a</span> shell command must be changed to instead</div><div class="line">use the <span class="string">"nodejs"</span> command.</div></pre></td></tr></table></figure>
-<p>从上述文中中可以看出  在debian中 可执行文件node已经被修改成nodejs<br>因此npm执行的过程中找不到node可执行文件，故而出错。</p>
-<p>执行命令</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>从结果可知，可执行文件node意见改成了nodejs，这也是找不到 node 以及 npm install  安装一些模块时失败的原因<br>因此可执行文中开头的两种方法之一解决该问题</p>
-<p>再次执行</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root       6  3月 27  2014 /usr/bin/node -&gt; nodejs*</div><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>此时再次执行npm相关的指令就OK了。</p>
-<h3 id="说明：本人采用的是第一种方法。"><a href="#说明：本人采用的是第一种方法。" class="headerlink" title="说明：本人采用的是第一种方法。"></a>说明：本人采用的是第一种方法。</h3>
-	
-	</div>
-  <a type="button" href="/2016/07/04/npm_install_error/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-07-04 </div>
-			<div class="article-title"><a href="/2016/07/04/npm_install_error1/" title="使用node管理器npm时报错">npm install error</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法"><a href="#Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法" class="headerlink" title="Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法"></a>Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法</h1><h2 id="错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0"><a href="#错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0" class="headerlink" title="错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0"></a>错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0</h2><h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install nodejs-legacy</div></pre></td></tr></table></figure>
-<p>也可以尝试</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln -s /usr/bin/nodejs  /usr/bin/node</div></pre></td></tr></table></figure>
-<h3 id="问题解决思路："><a href="#问题解决思路：" class="headerlink" title="问题解决思路："></a>问题解决思路：</h3><p> 本人是在安装hexo时出现的错误，即下列操作 </p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
-<p>错误信息中有如下信息</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm ERR! not ok <span class="selector-tag">code</span> <span class="number">0</span></div><div class="line">npm WARN This failure might be due to the use of legacy binary <span class="string">"node"</span></div><div class="line">npm WARN For further explanations, please read</div><div class="line">/usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>根据提示信息打开文件</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>文件中7-8行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The global search path <span class="keyword">for</span> modules is /usr/lib/nodejs</div></pre></td></tr></table></figure>
-<p>32-40行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">The upstream name <span class="keyword">for</span> the Node<span class="selector-class">.js</span> interpreter command is <span class="string">"node"</span>.</div><div class="line">In Debian the interpreter command has been changed to <span class="string">"nodejs"</span>.</div><div class="line"></div><div class="line">This was done to prevent <span class="selector-tag">a</span> namespace collision: other commands use </div><div class="line">the same name <span class="keyword">in</span> their upstreams, such as ax25-node from the <span class="string">"node"</span></div><div class="line">package.</div><div class="line"></div><div class="line">Scripts calling Node<span class="selector-class">.js</span> as <span class="selector-tag">a</span> shell command must be changed to instead</div><div class="line">use the <span class="string">"nodejs"</span> command.</div></pre></td></tr></table></figure>
-<p>从上述文中中可以看出  在debian中 可执行文件node已经被修改成nodejs<br>因此npm执行的过程中找不到node可执行文件，故而出错。</p>
-<p>执行命令</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>从结果可知，可执行文件node意见改成了nodejs，这也是找不到 node 以及 npm install  安装一些模块时失败的原因<br>因此可执行文中开头的两种方法之一解决该问题</p>
-<p>再次执行</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root       6  3月 27  2014 /usr/bin/node -&gt; nodejs*</div><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>此时再次执行npm相关的指令就OK了。</p>
-<h3 id="说明：本人采用的是第一种方法。"><a href="#说明：本人采用的是第一种方法。" class="headerlink" title="说明：本人采用的是第一种方法。"></a>说明：本人采用的是第一种方法。</h3>
-	
-	</div>
-  <a type="button" href="/2016/07/04/npm_install_error1/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-07-04 </div>
-			<div class="article-title"><a href="/2016/07/04/npm_install_error2/" title="使用node管理器npm时报错">npm install error</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法"><a href="#Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法" class="headerlink" title="Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法"></a>Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法</h1><h2 id="错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0"><a href="#错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0" class="headerlink" title="错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0"></a>错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0</h2><h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install nodejs-legacy</div></pre></td></tr></table></figure>
-<p>也可以尝试</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln -s /usr/bin/nodejs  /usr/bin/node</div></pre></td></tr></table></figure>
-<h3 id="问题解决思路："><a href="#问题解决思路：" class="headerlink" title="问题解决思路："></a>问题解决思路：</h3><p> 本人是在安装hexo时出现的错误，即下列操作 </p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
-<p>错误信息中有如下信息</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm ERR! not ok <span class="selector-tag">code</span> <span class="number">0</span></div><div class="line">npm WARN This failure might be due to the use of legacy binary <span class="string">"node"</span></div><div class="line">npm WARN For further explanations, please read</div><div class="line">/usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>根据提示信息打开文件</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>文件中7-8行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The global search path <span class="keyword">for</span> modules is /usr/lib/nodejs</div></pre></td></tr></table></figure>
-<p>32-40行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">The upstream name <span class="keyword">for</span> the Node<span class="selector-class">.js</span> interpreter command is <span class="string">"node"</span>.</div><div class="line">In Debian the interpreter command has been changed to <span class="string">"nodejs"</span>.</div><div class="line"></div><div class="line">This was done to prevent <span class="selector-tag">a</span> namespace collision: other commands use </div><div class="line">the same name <span class="keyword">in</span> their upstreams, such as ax25-node from the <span class="string">"node"</span></div><div class="line">package.</div><div class="line"></div><div class="line">Scripts calling Node<span class="selector-class">.js</span> as <span class="selector-tag">a</span> shell command must be changed to instead</div><div class="line">use the <span class="string">"nodejs"</span> command.</div></pre></td></tr></table></figure>
-<p>从上述文中中可以看出  在debian中 可执行文件node已经被修改成nodejs<br>因此npm执行的过程中找不到node可执行文件，故而出错。</p>
-<p>执行命令</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>从结果可知，可执行文件node意见改成了nodejs，这也是找不到 node 以及 npm install  安装一些模块时失败的原因<br>因此可执行文中开头的两种方法之一解决该问题</p>
-<p>再次执行</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root       6  3月 27  2014 /usr/bin/node -&gt; nodejs*</div><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>此时再次执行npm相关的指令就OK了。</p>
-<h3 id="说明：本人采用的是第一种方法。"><a href="#说明：本人采用的是第一种方法。" class="headerlink" title="说明：本人采用的是第一种方法。"></a>说明：本人采用的是第一种方法。</h3>
-	
-	</div>
-  <a type="button" href="/2016/07/04/npm_install_error2/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-07-04 </div>
-			<div class="article-title"><a href="/2016/07/04/npm_install_error3/" title="使用node管理器npm时报错">npm install error</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法"><a href="#Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法" class="headerlink" title="Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法"></a>Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法</h1><h2 id="错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0"><a href="#错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0" class="headerlink" title="错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0"></a>错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0</h2><h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install nodejs-legacy</div></pre></td></tr></table></figure>
-<p>也可以尝试</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln -s /usr/bin/nodejs  /usr/bin/node</div></pre></td></tr></table></figure>
-<h3 id="问题解决思路："><a href="#问题解决思路：" class="headerlink" title="问题解决思路："></a>问题解决思路：</h3><p> 本人是在安装hexo时出现的错误，即下列操作 </p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
-<p>错误信息中有如下信息</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm ERR! not ok <span class="selector-tag">code</span> <span class="number">0</span></div><div class="line">npm WARN This failure might be due to the use of legacy binary <span class="string">"node"</span></div><div class="line">npm WARN For further explanations, please read</div><div class="line">/usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>根据提示信息打开文件</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>文件中7-8行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The global search path <span class="keyword">for</span> modules is /usr/lib/nodejs</div></pre></td></tr></table></figure>
-<p>32-40行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">The upstream name <span class="keyword">for</span> the Node<span class="selector-class">.js</span> interpreter command is <span class="string">"node"</span>.</div><div class="line">In Debian the interpreter command has been changed to <span class="string">"nodejs"</span>.</div><div class="line"></div><div class="line">This was done to prevent <span class="selector-tag">a</span> namespace collision: other commands use </div><div class="line">the same name <span class="keyword">in</span> their upstreams, such as ax25-node from the <span class="string">"node"</span></div><div class="line">package.</div><div class="line"></div><div class="line">Scripts calling Node<span class="selector-class">.js</span> as <span class="selector-tag">a</span> shell command must be changed to instead</div><div class="line">use the <span class="string">"nodejs"</span> command.</div></pre></td></tr></table></figure>
-<p>从上述文中中可以看出  在debian中 可执行文件node已经被修改成nodejs<br>因此npm执行的过程中找不到node可执行文件，故而出错。</p>
-<p>执行命令</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>从结果可知，可执行文件node意见改成了nodejs，这也是找不到 node 以及 npm install  安装一些模块时失败的原因<br>因此可执行文中开头的两种方法之一解决该问题</p>
-<p>再次执行</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root       6  3月 27  2014 /usr/bin/node -&gt; nodejs*</div><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>此时再次执行npm相关的指令就OK了。</p>
-<h3 id="说明：本人采用的是第一种方法。"><a href="#说明：本人采用的是第一种方法。" class="headerlink" title="说明：本人采用的是第一种方法。"></a>说明：本人采用的是第一种方法。</h3>
-	
-	</div>
-  <a type="button" href="/2016/07/04/npm_install_error3/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-07-04 </div>
-			<div class="article-title"><a href="/2016/07/04/npm_install_error4/" title="使用node管理器npm时报错">npm install error</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法"><a href="#Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法" class="headerlink" title="Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法"></a>Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法</h1><h2 id="错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0"><a href="#错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0" class="headerlink" title="错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0"></a>错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0</h2><h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install nodejs-legacy</div></pre></td></tr></table></figure>
-<p>也可以尝试</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln -s /usr/bin/nodejs  /usr/bin/node</div></pre></td></tr></table></figure>
-<h3 id="问题解决思路："><a href="#问题解决思路：" class="headerlink" title="问题解决思路："></a>问题解决思路：</h3><p> 本人是在安装hexo时出现的错误，即下列操作 </p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
-<p>错误信息中有如下信息</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm ERR! not ok <span class="selector-tag">code</span> <span class="number">0</span></div><div class="line">npm WARN This failure might be due to the use of legacy binary <span class="string">"node"</span></div><div class="line">npm WARN For further explanations, please read</div><div class="line">/usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>根据提示信息打开文件</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>文件中7-8行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The global search path <span class="keyword">for</span> modules is /usr/lib/nodejs</div></pre></td></tr></table></figure>
-<p>32-40行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">The upstream name <span class="keyword">for</span> the Node<span class="selector-class">.js</span> interpreter command is <span class="string">"node"</span>.</div><div class="line">In Debian the interpreter command has been changed to <span class="string">"nodejs"</span>.</div><div class="line"></div><div class="line">This was done to prevent <span class="selector-tag">a</span> namespace collision: other commands use </div><div class="line">the same name <span class="keyword">in</span> their upstreams, such as ax25-node from the <span class="string">"node"</span></div><div class="line">package.</div><div class="line"></div><div class="line">Scripts calling Node<span class="selector-class">.js</span> as <span class="selector-tag">a</span> shell command must be changed to instead</div><div class="line">use the <span class="string">"nodejs"</span> command.</div></pre></td></tr></table></figure>
-<p>从上述文中中可以看出  在debian中 可执行文件node已经被修改成nodejs<br>因此npm执行的过程中找不到node可执行文件，故而出错。</p>
-<p>执行命令</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>从结果可知，可执行文件node意见改成了nodejs，这也是找不到 node 以及 npm install  安装一些模块时失败的原因<br>因此可执行文中开头的两种方法之一解决该问题</p>
-<p>再次执行</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root       6  3月 27  2014 /usr/bin/node -&gt; nodejs*</div><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>此时再次执行npm相关的指令就OK了。</p>
-<h3 id="说明：本人采用的是第一种方法。"><a href="#说明：本人采用的是第一种方法。" class="headerlink" title="说明：本人采用的是第一种方法。"></a>说明：本人采用的是第一种方法。</h3>
-	
-	</div>
-  <a type="button" href="/2016/07/04/npm_install_error4/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-07-04 </div>
-			<div class="article-title"><a href="/2016/07/04/npm_install_error5/" title="使用node管理器npm时报错">npm install error</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法"><a href="#Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法" class="headerlink" title="Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法"></a>Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法</h1><h2 id="错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0"><a href="#错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0" class="headerlink" title="错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0"></a>错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0</h2><h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install nodejs-legacy</div></pre></td></tr></table></figure>
-<p>也可以尝试</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln -s /usr/bin/nodejs  /usr/bin/node</div></pre></td></tr></table></figure>
-<h3 id="问题解决思路："><a href="#问题解决思路：" class="headerlink" title="问题解决思路："></a>问题解决思路：</h3><p> 本人是在安装hexo时出现的错误，即下列操作 </p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
-<p>错误信息中有如下信息</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm ERR! not ok <span class="selector-tag">code</span> <span class="number">0</span></div><div class="line">npm WARN This failure might be due to the use of legacy binary <span class="string">"node"</span></div><div class="line">npm WARN For further explanations, please read</div><div class="line">/usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>根据提示信息打开文件</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>文件中7-8行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The global search path <span class="keyword">for</span> modules is /usr/lib/nodejs</div></pre></td></tr></table></figure>
-<p>32-40行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">The upstream name <span class="keyword">for</span> the Node<span class="selector-class">.js</span> interpreter command is <span class="string">"node"</span>.</div><div class="line">In Debian the interpreter command has been changed to <span class="string">"nodejs"</span>.</div><div class="line"></div><div class="line">This was done to prevent <span class="selector-tag">a</span> namespace collision: other commands use </div><div class="line">the same name <span class="keyword">in</span> their upstreams, such as ax25-node from the <span class="string">"node"</span></div><div class="line">package.</div><div class="line"></div><div class="line">Scripts calling Node<span class="selector-class">.js</span> as <span class="selector-tag">a</span> shell command must be changed to instead</div><div class="line">use the <span class="string">"nodejs"</span> command.</div></pre></td></tr></table></figure>
-<p>从上述文中中可以看出  在debian中 可执行文件node已经被修改成nodejs<br>因此npm执行的过程中找不到node可执行文件，故而出错。</p>
-<p>执行命令</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>从结果可知，可执行文件node意见改成了nodejs，这也是找不到 node 以及 npm install  安装一些模块时失败的原因<br>因此可执行文中开头的两种方法之一解决该问题</p>
-<p>再次执行</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root       6  3月 27  2014 /usr/bin/node -&gt; nodejs*</div><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>此时再次执行npm相关的指令就OK了。</p>
-<h3 id="说明：本人采用的是第一种方法。"><a href="#说明：本人采用的是第一种方法。" class="headerlink" title="说明：本人采用的是第一种方法。"></a>说明：本人采用的是第一种方法。</h3>
-	
-	</div>
-  <a type="button" href="/2016/07/04/npm_install_error5/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-07-04 </div>
-			<div class="article-title"><a href="/2016/07/04/npm_install_error6/" title="使用node管理器npm时报错">npm install error</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法"><a href="#Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法" class="headerlink" title="Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法"></a>Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法</h1><h2 id="错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0"><a href="#错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0" class="headerlink" title="错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0"></a>错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0</h2><h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install nodejs-legacy</div></pre></td></tr></table></figure>
-<p>也可以尝试</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln -s /usr/bin/nodejs  /usr/bin/node</div></pre></td></tr></table></figure>
-<h3 id="问题解决思路："><a href="#问题解决思路：" class="headerlink" title="问题解决思路："></a>问题解决思路：</h3><p> 本人是在安装hexo时出现的错误，即下列操作 </p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
-<p>错误信息中有如下信息</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm ERR! not ok <span class="selector-tag">code</span> <span class="number">0</span></div><div class="line">npm WARN This failure might be due to the use of legacy binary <span class="string">"node"</span></div><div class="line">npm WARN For further explanations, please read</div><div class="line">/usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>根据提示信息打开文件</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>文件中7-8行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The global search path <span class="keyword">for</span> modules is /usr/lib/nodejs</div></pre></td></tr></table></figure>
-<p>32-40行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">The upstream name <span class="keyword">for</span> the Node<span class="selector-class">.js</span> interpreter command is <span class="string">"node"</span>.</div><div class="line">In Debian the interpreter command has been changed to <span class="string">"nodejs"</span>.</div><div class="line"></div><div class="line">This was done to prevent <span class="selector-tag">a</span> namespace collision: other commands use </div><div class="line">the same name <span class="keyword">in</span> their upstreams, such as ax25-node from the <span class="string">"node"</span></div><div class="line">package.</div><div class="line"></div><div class="line">Scripts calling Node<span class="selector-class">.js</span> as <span class="selector-tag">a</span> shell command must be changed to instead</div><div class="line">use the <span class="string">"nodejs"</span> command.</div></pre></td></tr></table></figure>
-<p>从上述文中中可以看出  在debian中 可执行文件node已经被修改成nodejs<br>因此npm执行的过程中找不到node可执行文件，故而出错。</p>
-<p>执行命令</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>从结果可知，可执行文件node意见改成了nodejs，这也是找不到 node 以及 npm install  安装一些模块时失败的原因<br>因此可执行文中开头的两种方法之一解决该问题</p>
-<p>再次执行</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root       6  3月 27  2014 /usr/bin/node -&gt; nodejs*</div><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>此时再次执行npm相关的指令就OK了。</p>
-<h3 id="说明：本人采用的是第一种方法。"><a href="#说明：本人采用的是第一种方法。" class="headerlink" title="说明：本人采用的是第一种方法。"></a>说明：本人采用的是第一种方法。</h3>
-	
-	</div>
-  <a type="button" href="/2016/07/04/npm_install_error6/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-           
-		
-           
-			  
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-07-04 </div>
-			<div class="article-title"><a href="/2016/07/04/npm_install_error7/" title="使用node管理器npm时报错">npm install error</a></div>						
-		</h3>
-	
-
-
-			  <div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法"><a href="#Ubuntu-环境中-node-not-found-以及-npm-install失败的处理方法" class="headerlink" title="Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法"></a>Ubuntu 环境中  node: not found 以及 npm  install失败的处理方法</h1><h2 id="错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0"><a href="#错误信息：-npm-ERR-；-node-not-found-；-npm-ERR-not-ok-code-0" class="headerlink" title="错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0"></a>错误信息： npm ERR ； node: not found  ； npm ERR! not ok code 0</h2><h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install nodejs-legacy</div></pre></td></tr></table></figure>
-<p>也可以尝试</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ln -s /usr/bin/nodejs  /usr/bin/node</div></pre></td></tr></table></figure>
-<h3 id="问题解决思路："><a href="#问题解决思路：" class="headerlink" title="问题解决思路："></a>问题解决思路：</h3><p> 本人是在安装hexo时出现的错误，即下列操作 </p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
-<p>错误信息中有如下信息</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm ERR! not ok <span class="selector-tag">code</span> <span class="number">0</span></div><div class="line">npm WARN This failure might be due to the use of legacy binary <span class="string">"node"</span></div><div class="line">npm WARN For further explanations, please read</div><div class="line">/usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>根据提示信息打开文件</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/share/doc/nodejs/README.Debian</div></pre></td></tr></table></figure>
-<p>文件中7-8行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The global search path <span class="keyword">for</span> modules is /usr/lib/nodejs</div></pre></td></tr></table></figure>
-<p>32-40行文字：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">The upstream name <span class="keyword">for</span> the Node<span class="selector-class">.js</span> interpreter command is <span class="string">"node"</span>.</div><div class="line">In Debian the interpreter command has been changed to <span class="string">"nodejs"</span>.</div><div class="line"></div><div class="line">This was done to prevent <span class="selector-tag">a</span> namespace collision: other commands use </div><div class="line">the same name <span class="keyword">in</span> their upstreams, such as ax25-node from the <span class="string">"node"</span></div><div class="line">package.</div><div class="line"></div><div class="line">Scripts calling Node<span class="selector-class">.js</span> as <span class="selector-tag">a</span> shell command must be changed to instead</div><div class="line">use the <span class="string">"nodejs"</span> command.</div></pre></td></tr></table></figure>
-<p>从上述文中中可以看出  在debian中 可执行文件node已经被修改成nodejs<br>因此npm执行的过程中找不到node可执行文件，故而出错。</p>
-<p>执行命令</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>从结果可知，可执行文件node意见改成了nodejs，这也是找不到 node 以及 npm install  安装一些模块时失败的原因<br>因此可执行文中开头的两种方法之一解决该问题</p>
-<p>再次执行</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ll /usr/bin/node*</div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">lrwxrwxrwx 1 root root       6  3月 27  2014 /usr/bin/node -&gt; nodejs*</div><div class="line">lrwxrwxrwx 1 root root      33 10月 22  2013 /usr/bin/node-gyp -&gt; ../share/node-gyp/bin/node-gyp.js*</div><div class="line">-rwxr-xr-x 1 root root 1462424  3月 27  2014 /usr/bin/nodejs*</div></pre></td></tr></table></figure>
-<p>此时再次执行npm相关的指令就OK了。</p>
-<h3 id="说明：本人采用的是第一种方法。"><a href="#说明：本人采用的是第一种方法。" class="headerlink" title="说明：本人采用的是第一种方法。"></a>说明：本人采用的是第一种方法。</h3>
-	
-	</div>
-  <a type="button" href="/2016/07/04/npm_install_error7/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-           
-		
-
-		</div>
-
-		<!-- pagination -->
-		<div>
-  		<center>
-		<div class="pagination">
-<ul class="pagination">
-	 
-</ul>
-</div>
-
-  		</center>
-		</div>
-
-		
-		
-	</div> <!-- col-md-9 -->
-
-	
-		<div class="col-md-3">
-	<div id="sidebar">
-	
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="懒惰的码农~" title="懒惰的码农~"/></a>
+			</div>
 			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
-  </div>
-
-
-		
-			
-	<div class="widget">
-		<h4>分类</h4>
-		<ul class="tag_box inline list-unstyled">
-		
-			<li><a href="/categories/node/">node<span>8</span></a></li>
-		
-		</ul>
-	</div>
-
-		
-			
-	<div class="widget">
-		<h4>标签云</h4>
-		<ul class="tag_box inline list-unstyled">		
-		
-			<li><a href="/tags/npm/">npm<span>8</span></a></li>
-		
-			<li><a href="/tags/node/">node<span>8</span></a></li>
-		
-		 
-		</ul>
-	</div>
-
-
-		
-			
-<div class="widget">
-  <h4>最新文章</h4>
-  <ul class="entry list-unstyled">
-    
-      <li>
-        <a href="/2016/07/04/npm_install_error/"  title="使用node管理器npm时报错" ><i class="fa fa-file-o"></i>npm install error</a>
-      </li>
-    
-      <li>
-        <a href="/2016/07/04/npm_install_error1/"  title="使用node管理器npm时报错" ><i class="fa fa-file-o"></i>npm install error</a>
-      </li>
-    
-      <li>
-        <a href="/2016/07/04/npm_install_error2/"  title="使用node管理器npm时报错" ><i class="fa fa-file-o"></i>npm install error</a>
-      </li>
-    
-      <li>
-        <a href="/2016/07/04/npm_install_error3/"  title="使用node管理器npm时报错" ><i class="fa fa-file-o"></i>npm install error</a>
-      </li>
-    
-      <li>
-        <a href="/2016/07/04/npm_install_error4/"  title="使用node管理器npm时报错" ><i class="fa fa-file-o"></i>npm install error</a>
-      </li>
-    
-  </ul>
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="懒惰的码农~">懒惰的码农~</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
 </div>
 
-		
-			
-<div class="widget">
-	<h4>链接</h4>
-	<ul class="blogroll list-unstyled">
-	
-		<li><i class="fa fa-github"></i><a href="https://github.com/wzpan/freemind/" title="Freemind's Github repository." target="_blank"]);">Freemind</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="http://www.github.com/wzpan" title="My Github account." target="_blank"]);">My Github</a></li>
-	
-		<li><i class="fa fa-linkedin"></i><a href="http://www.linkedin.com/in/hahack" title="My Linkin account." target="_blank"]);">My LinkedIn</a></li>
-	
-	</ul>
-</div>
+    </header>
+    <div id="container">
+      <div id="main">
 
-
-		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
-
-	
-	
-</div> <!-- row-fluid -->
-
-
-	</div>
-  </div>
-  <div class="container-narrow">
-  <footer> <p>
-  &copy; 2016 star
+  <section class="post" itemscope itemprop="blogPost">
   
-      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
-</p> </footer>
-</div> <!-- container-narrow -->
+    <a href="/2016/07/04/npm_install_error/" title="npm install error" itemprop="url">
   
+    <h1 itemprop="name">npm install error</h1>
+    
+     
+      <p itemprop="description" >使用node管理器npm时报错</p>
+      
+    
+    <time datetime="2016-07-03T16:00:00.000Z" itemprop="datePublished">2016-07-04</time>
+  </a>
+</section>
+
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2016/07/04/npm_install_error1/" title="npm install error" itemprop="url">
+  
+    <h1 itemprop="name">npm install error</h1>
+    
+     
+      <p itemprop="description" >使用node管理器npm时报错</p>
+      
+    
+    <time datetime="2016-07-03T16:00:00.000Z" itemprop="datePublished">2016-07-04</time>
+  </a>
+</section>
+
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2016/07/04/npm_install_error3/" title="npm install error" itemprop="url">
+  
+    <h1 itemprop="name">npm install error</h1>
+    
+     
+      <p itemprop="description" >使用node管理器npm时报错</p>
+      
+    
+    <time datetime="2016-07-03T16:00:00.000Z" itemprop="datePublished">2016-07-04</time>
+  </a>
+</section>
+
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2016/07/04/npm_install_error4/" title="npm install error" itemprop="url">
+  
+    <h1 itemprop="name">npm install error</h1>
+    
+     
+      <p itemprop="description" >使用node管理器npm时报错</p>
+      
+    
+    <time datetime="2016-07-03T16:00:00.000Z" itemprop="datePublished">2016-07-04</time>
+  </a>
+</section>
+
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2016/07/04/npm_install_error5/" title="npm install error" itemprop="url">
+  
+    <h1 itemprop="name">npm install error</h1>
+    
+     
+      <p itemprop="description" >使用node管理器npm时报错</p>
+      
+    
+    <time datetime="2016-07-03T16:00:00.000Z" itemprop="datePublished">2016-07-04</time>
+  </a>
+</section>
+
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2016/07/04/npm_install_error6/" title="npm install error" itemprop="url">
+  
+    <h1 itemprop="name">npm install error</h1>
+    
+     
+      <p itemprop="description" >使用node管理器npm时报错</p>
+      
+    
+    <time datetime="2016-07-03T16:00:00.000Z" itemprop="datePublished">2016-07-04</time>
+  </a>
+</section>
+
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2016/07/04/npm_install_error7/" title="npm install error" itemprop="url">
+  
+    <h1 itemprop="name">npm install error</h1>
+    
+     
+      <p itemprop="description" >使用node管理器npm时报错</p>
+      
+    
+    <time datetime="2016-07-03T16:00:00.000Z" itemprop="datePublished">2016-07-04</time>
+  </a>
+</section>
+
+
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/node/" title="node">node<sup>7</sup></a></li>
+		
+		</ul>
+</div>
 
 
   
-<a id="gotop" href="#">   
-  <span>▲</span> 
-</a>
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/node/" title="node">node<sup>7</sup></a></li>
+		
+			<li><a href="/tags/npm/" title="npm">npm<sup>7</sup></a></li>
+		
+		</ul>
+</div>
 
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/search.js"></script> 
 
+  <div class="rsspart">
+	<a href="null" target="_blank" title="rss">RSS 订阅</a>
+</div>
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font clearfix">
+		
+		
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2016 
+		
+		<a href="http://yoursite.com" target="_blank" title="star">star</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
 </script>
 
 
 
-</body>
-   </html>
+
+
+
+
+  </body>
+ </html>
